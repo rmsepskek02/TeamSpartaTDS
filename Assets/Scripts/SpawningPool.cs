@@ -10,7 +10,7 @@ public class SpawningPool : MonoBehaviour
     public float lastSpawnTime;
     public float spawnDelay;
     public Monster zombie;
-    public float[] spawnYPos = new float[] { -2.2f, -2.9f, -3.6f };
+    public float[] spawnYPos = new float[] { -2.4f, -3.0f, -3.6f };
     public int num = 0;
     public LineManager lineManager;
     // Start is called before the first frame update

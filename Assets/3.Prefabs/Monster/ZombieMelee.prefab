@@ -73,7 +73,7 @@ MonoBehaviour:
   line: 0
   isJumping: 0
   jumpHeight: 2
-  jumpSpeed: 5
+  jumpSpeed: 4
   gravity: -9.8
   zVelocity: 0
   canMove: 1
@@ -85,6 +85,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   canJump: 0
+  lineManager: {fileID: 0}
 --- !u!70 &-296497128957761488
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
