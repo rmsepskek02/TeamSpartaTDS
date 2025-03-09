@@ -7,6 +7,8 @@ TagManager:
   - Hero
   - Box
   - Monster
+  - Zombie
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -16,9 +18,9 @@ TagManager:
   - UI
   - Monster
   - Box
-  - 
-  - 
-  - 
+  - Ground
+  - Zombie
+  - Obstacle
   - 
   - 
   - 
