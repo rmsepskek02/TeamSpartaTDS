@@ -43,8 +43,6 @@ public class LineManager : MonoBehaviour
         {
             line2.Add(monster);
         }
-
-        Debug.Log($"{monster.name} 몬스터가 추가되었습니다.");
     }
 
     // 몬스터 제거 처리 (라인에서 몬스터 제거)
@@ -62,8 +60,6 @@ public class LineManager : MonoBehaviour
         {
             line2.Remove(monster);
         }
-
-        Debug.Log($"{monster.name} 몬스터가 제거되었습니다.");
     }
 
     // 주어진 몬스터가 속한 라인 리스트를 반환하는 함수

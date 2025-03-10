@@ -171,9 +171,9 @@ MonoBehaviour:
   spawnDelay: 0
   zombie: {fileID: 6617480490206536940, guid: e48e7c461a85c463cba5a999afb91a67, type: 3}
   spawnYPos:
-  - -2.4
+  - -2.6
   - -3
-  - -3.6
+  - -3.4
   num: 0
   lineManager: {fileID: 0}
 --- !u!1001 &135695950
@@ -279,9 +279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91457cf040e775f42b1a805b978c360c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  line0: []
   line1: []
   line2: []
-  line3: []
 --- !u!4 &367228263
 Transform:
   m_ObjectHideFlags: 0

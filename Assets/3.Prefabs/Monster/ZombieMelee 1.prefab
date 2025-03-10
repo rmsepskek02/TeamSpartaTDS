@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1174570720321624928}
   - component: {fileID: 7016750400611631704}
-  - component: {fileID: 6617480490206536940}
-  - component: {fileID: -1311992508992691568}
+  - component: {fileID: 2408167000914614750}
+  - component: {fileID: -3571854525326996502}
+  - component: {fileID: -1718614613550164566}
   m_Layer: 6
-  m_Name: ZombieMelee
+  m_Name: ZombieMelee 1
   m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +57,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6617480490206536940
+--- !u!114 &2408167000914614750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,37 +66,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 319310827380095937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac3634b75e4a75a4993ae8663c04efdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 3473b5b630a11f74c9dd8b59d4092887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  line: 0
-  isJumping: 0
-  jumpHeight: 2
-  jumpSpeed: 4
-  gravity: -9.8
-  zVelocity: 0
-  canMove: 1
   hero: {fileID: 0}
   heroXPos: {x: 0, y: 0}
-  stopDistance: 0
-  detectionDistance: 0
+  canMove: 1
+  moveSpeed: 0
   detectionLayer:
     serializedVersion: 2
-    m_Bits: 64
-  canJump: 0
-  lineManager: {fileID: 0}
-  lineOfMonster: []
---- !u!61 &-1311992508992691568
-BoxCollider2D:
+    m_Bits: 576
+  leftDetectRayDistance: 0
+  rb: {fileID: 0}
+--- !u!136 &-3571854525326996502
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319310827380095937}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4be68c5ec006a2343a7a7f6a360046c1, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -103,34 +93,41 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.2, y: 0.4}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.9}
-  m_EdgeRadius: 0
+  m_Radius: 0.2
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: -0.1, y: 0.4, z: 0}
+--- !u!54 &-1718614613550164566
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319310827380095937}
+  serializedVersion: 4
+  m_Mass: 10
+  m_Drag: 10
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
 --- !u!1 &2094693183665648150
 GameObject:
   m_ObjectHideFlags: 0
