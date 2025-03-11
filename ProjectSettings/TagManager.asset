@@ -9,6 +9,7 @@ TagManager:
   - Monster
   - Zombie
   - Obstacle
+  - Ground
   layers:
   - Default
   - TransparentFX

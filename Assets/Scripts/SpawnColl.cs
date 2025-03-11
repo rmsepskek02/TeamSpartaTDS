@@ -13,13 +13,13 @@ public class SpawnColl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnDelay = 3f;
+        spawnDelay = 2f;
 
         if (mainCamera == null)
         {
             mainCamera = Camera.main;
         }
-        transform.position = new Vector2(mainCamera.transform.position.x + 5, -2.9f);
+        transform.position = new Vector2(mainCamera.transform.position.x + 7, -2.9f);
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class SpawnColl : MonoBehaviour
         {
             int randomIndex = Random.Range(0, spawnYPos.Length);
             float yValue = spawnYPos[randomIndex];
-            Vector3 spawnPos = new Vector3(transform.position.x, yValue, randomIndex);
+            Vector3 spawnPos = new Vector3(transform.position.x, yValue, randomIndex*2);
 
             GameObject go = Instantiate(prefab, spawnPos, Quaternion.identity);
             go.gameObject.name += num;
